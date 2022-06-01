@@ -1,8 +1,14 @@
 {
+  "name": "youtube-tailwind-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build":  "npx tailwindcss -i ./src/main.css -o ./css/main.css",
-    "watch":  "npx tailwindcss -i ./src/main.css -o ./css/main.css --watch"
+    "build": "npx tailwindcss -i ./tailwind/main.css -o ./css/main.css",
+    "watch": "npx tailwindcss -i ./tailwind/main.css -o ./css/main.css --watch"
   },
+  "keywords": [],
+  "author": "muhyasin89@gmail.com",
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.13",
