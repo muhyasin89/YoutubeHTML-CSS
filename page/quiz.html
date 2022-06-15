@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <link href="../css/main.css" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
   <div class="flex h-screen">
@@ -21,49 +25,28 @@
           <label class="block text-gray-700 text-sm font-bold mb-2" for="quiz">
             Category
           </label>
-          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-            <option>Quiz 1</option>
-            <option>Quiz 2</option>
-            <option>Quiz 3</option>
-          </select>
-        </div>
-        <div class="mb-4">
+
           <label class="block text-gray-700 text-sm font-bold mb-2" for="quiz">
             Quiz
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="quiz" type="text" placeholder="quiz">
+          <div class="flex justify-center">
+            <div>
+              <div class="form-check">
+                <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault1">
+                  Answer
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                  Answer 2
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="quiz">
-            Answer 1
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="quiz" type="text" placeholder="Answer 1">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="quiz">
-            Answer 2
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="quiz" type="text" placeholder="Answer 2">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="quiz">
-            Answer 3
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="quiz" type="text" placeholder="Answer 3">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="quiz">
-            Answer 4
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="quiz" type="text" placeholder="Answer 4">
-        </div>
-
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="quiz">
-            Correct Answer
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="quiz" type="text" placeholder="Correct Answer">
-        </div>
+        
         <div class="flex items-center justify-between">
           <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
             Submit
@@ -73,7 +56,7 @@
           </a>
         </div>
       </form>
-      <div class="attribution text-sky-600 grid place-items-center">
+      <div class="attribution text-sky-600">
         Coded by <a href="#">Better Programmer</a>.
       </div>
     </div>

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <link href="css/main.css" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
   <div class="flex h-screen">
@@ -26,6 +30,16 @@
         </div>
       </a>
 
+      <a href="/page/create_quiz.html">
+        <div class="grid grid-cols-12 p-4 bg-slate-100 hover:bg-gray-50 rounded-3xl my-2">
+          <img src="images/icon.png" class="col-span-2 gap-1" />
+          <h2 class="col-span-3 gap-1 font-bold text-2xl text-fuchsia-300">Create Quiz</h2>
+          <p class="text-slate-800 col-span-5 pt-1">
+            (Create Quiz )
+          </p>
+        </div>
+      </a>
+
       <a href="/page/quiz.html">
         <div class="grid grid-cols-12 p-4 bg-slate-100 hover:bg-gray-50 rounded-3xl my-2">
           <img src="images/icon.png" class="col-span-2 gap-1" />
@@ -44,7 +58,7 @@
         Create Quiz
       </button>
 
-      <div class="attribution text-sky-600 grid place-items-center">
+      <div class="attribution text-sky-600">
         Coded by <a href="#">Better Programmer</a>.
       </div>
     </div>
