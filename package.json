@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build":  "npx tailwindcss -i ./src/input/main.css -o ./src/css/main.css",
-    "watch":  "npx tailwindcss -i ./src/input/main.css -o ./src/css/main.css --watch"
+    "build":  "npx tailwindcss -i ./src/input/main.css -o ./css/main.css",
+    "watch":  "npx tailwindcss -i ./src/input/main.css -o ./css/main.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
