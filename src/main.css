@@ -5,7 +5,7 @@
 @layer components {
     
     .box{
-        @apply relative block shadow-md mt-28 w-full p-2 h-52 bg-slate-100 border-4 border-slate-100
+        @apply relative block shadow-md w-full p-2 h-52 bg-slate-100 border-4 border-slate-100
     }
 
     .box-title{
