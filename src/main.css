@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+
+@layer components {
+    .h-title {
+        @apply font-semibold text-xl py-2;
+    }
+
+    .bottom-div{
+        @apply float-left h-60 p-5 text-white;
+    }
+
+    .btn {
+        @apply text-white bg-yellow-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-28 py-2.5 mr-2 mb-2
+    }
+}
