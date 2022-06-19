@@ -1,7 +1,15 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'dekstop': "url('./images/bg-desktop.svg')",
+        'mobile': "url('./images/bg-mobile.svg')",
+      },
+      colors: {
+        "original": "#674bb1"
+      }
+    },
   },
   plugins: [],
 }
