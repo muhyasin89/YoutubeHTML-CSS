@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+
+@layer components {
+    .nav_item {
+        @apply visible nav-item md:invisible;
+    }
+  }
